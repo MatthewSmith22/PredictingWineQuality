@@ -48,41 +48,49 @@ The data was collected from May 2004 to February 2007 and consisted of wine cert
 
 When running an analysis to determine the proportion of missing values for the red and white wine datasets, it was quickly determined there were none.
 
-(Insert Images)
-
 ### Zero Variance
 
 When running an analysis on zero or near-zero variance predictors, it is shown that there are none.
 
-(Insert Images)
+![](Images/RedWIne0Var.png) 
+
+![](Images/WhiteWine0Var.png)
 
 ### Correlation Between Predictors
 
 The following are correlation matrices for the red wine. This was done to plot the 11 predictors to indicate positive and negative relationships. There is a very heavy positive correlation between citric acid and fixed acidity (0.67), represented in blue. There are also negative correlations between citric acid and volatile acidity (-0.55), citric acid and pH (-0.54), and density and alcohol (-0.5), represented in red. The strong negatice linear correlation between pH and fixed acidity (-0.68) might cause multicollnearity. However, none of these correlations are greater than 0.75.
 
-(Insert Images)
+![](Images/RedWinCorrplot1.png)
+
+![](Images/RedWIneCorrplot2.png)
 
 In the white wine dataset, there is a strong positive correlation between totatl sulfur dioxide and free sulfur dioxide (0.62), and density and total sulfur dioxide (0.53). The positive relationship between density and residual sugar (0.84) may indicate significant varaibles in linear regression models. A concern for multicollinearity arises when looking at the negative relationship between denisty and alcohol (-0.78). Two of the linear relationships are above 0.75, which may influence the results of the regression models.
 
-(Insert Images)
+![](Images/WhiteWineCorrplot1.png)
+
+![](Images/WhiteWineCorrplot2.png)
 
 ### Transformations
 
 #### Histograms
 
-(Insert Images)
-
 The first figure is for the 11 predictors in the red wine dataset. Fixed acidity, density, and pH are relatively normal, indicating that they might be useful in the linear regression models. Volatile acidity, residual sugar, chlorides, free sulfur dioxide, total sugar dioxide, sulphates, and alcohol all tend to be rightskewedand appear to take the form of smaller values than larger values. Citric acid looks to be a bit right skewed, but it can be argued that it can be uniform for the middle values.
 
+![](Images/RedWineHistogram.png)
+
 When looking at the same 11 predictors for white wine, fixed acidity, volatile acidity, total sulfur dioxide, pH, and sulfates looke relatively normal. Citric acid, residual sugar, chlorides, free sulfur dioxide, and density are all heavily right skewed. Alcohol appears to be somewhat uniform with the exception of the spike at 9.
+
+![](Images/WhiteWineHistogram.png)
 
 #### Boxplots
 
 The first figure shows the boxplots for red wine. Fixed acidity, volatile acidity, residual sugar, chlorides, free sulfur dioxide, total sulfur dioxide, and sulphates are heavily right skewed and have many outliers on the upper end of the range. Citric acid and alcohol have very few outliers on the right end, Density and pH are centered towards the middle and have outliers on both ends. Alcohol has the least number of outliers.
 
+![](Images/RedWIneBoxplots.png)
+
 When looking at white wine, volatile acid, chlorides, free sulfur dioxide, and sulphates have many outliers in the upper range. Fixed acidity, citric acid, chlorides, total sulfur dioxide, and pH have outliers on both the upper and lower limits. Residual sugar and density have barely any outliers on the upper end. Alcohol has no outlier.
 
-(Insert Images)
+![](Images/WhiteWineBoxplots.png)
 
 #### Skewness
 
