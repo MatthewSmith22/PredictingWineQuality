@@ -160,7 +160,7 @@ This project focused on predicting the quality of wine based on the 11 physioche
 
 When conducting statistical analyses, the R^2 value is the proportion of variance from the response variable, Quality, that is explained by the model. The Root Mean Squared Error (RSME) is a measure of the error of the model in predicting the data. It is the standard deviation of the residuals and measures how far from the regression line the data is. The Mean Absolute Error (MAE) measures the average magnitude of the errors without considering direction and measures accuracy. The R^2 value is inversely related to the RMSE and MAE.
 
-Red Wine Model Summary
+#### Red Wine Model Summary
 
 *Linear Models*
 
@@ -191,7 +191,9 @@ Red Wine Model Summary
 | Cubist | committees = 50, neighbors = 0 | 0.4032834 | 0.6319219 |
 | Bagged | N/A | 0.4523526 | 0.6113595 |
 
-White Wine Model Summary
+![](Images/RedWineRMSEDotplot.png)
+
+#### White Wine Model Summary
 
 *Linear Models*
 
@@ -221,6 +223,8 @@ White Wine Model Summary
 | Boosted | shrinkage = 0.1 | 0.4164556 | 0.7086652 |
 | Cubist | committees = 100, neighbors = 5 | 0.4105473 | 0.7125549 |
 | Bagged | N/A | 0.279011 | 0.783021 |
+
+![](Images/WhiteWineRMSEDotplot.png)
 
 ### Conclusions
 
