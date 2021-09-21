@@ -150,7 +150,9 @@ Relative Frequency for Quality of White Wine Before and After Split
 
 When looking at the bar plots of the red wine data, the distribution is very similar in both the original set and the training set. The same can be said for the white wine split. This implies that the training set is a valid depiction of the original data and is appropriate for the analyses.
 
-(Insert Images)
+![](Images/RedWineDatasetDistribution.png) ![](Images/RedWineTrainingDatasetDistribution.png)
+
+![](Images/WhiteWineDatasetDistribution.png) ![](Images/WhiteWineTrainingDatasetDistribution.png)
 
 ### Model Building
 
